@@ -1,0 +1,348 @@
+/*===============*/
+/* BASIC SETUP */
+/*===============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+   font-size: 62.5%; 
+    
+}
+
+/*======================*/
+/* REUSABLE COMPONENTS */
+/*======================*/
+
+.row {
+    max-width: 117rem;
+    margin: 0 auto;
+}
+
+
+section {
+    padding: 7rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+   
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+     margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: white;
+     margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: white;
+     margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*======================*/
+/* HEADER COMPONENTS */
+/*======================*/
+.header {
+    height: 9rem;
+}
+.logo img{
+    width: 8rem;
+    height: 6rem;
+    float: left;
+}
+
+.logo h3 {
+    color: black;
+}
+
+.logo {
+    float: left;
+}
+
+.logo h3 {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 1.5rem;
+}
+
+.main-nav ul li{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-nav ul li:hover a{
+    color: rgba(166, 166, 166);
+}
+
+/*======================*/
+/* HERO COMPONENTS */
+/*======================*/
+
+.hero-section {
+    height: 60rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    margin: .5rem 0;
+}
+
+.hero-text h2 {
+    font-weight: 100;
+}
+
+/*======================*/
+/* SERVICE COMPONENTS */
+/*======================*/
+
+.service-section {
+    text-align: center;
+}
+
+.service-section h2 {
+    color: black;
+    font-weight: 500;
+}
+
+.service-section .heading-paragraph {
+    margin-bottom: 5rem;
+    font-weight: 100;
+}
+
+.service-section h3 {
+    color: black;
+}
+
+.service {
+    padding: 2rem 2rem;
+    border: 0.3px solid rgba(0, 0, 0, 0.2);
+}
+
+.service h4 {
+    margin-top: 2rem;
+    color: black;
+}
+
+/*======================*/
+/* INSTAGRAM COMPONENTS */
+/*======================*/
+
+.instagram-section {
+    text-align: center;
+    background: #2c2c2c;
+}
+
+.overlay-hover {
+    position: relative;
+}
+
+.overlay-hover img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay:hover {
+   opacity: 1;
+    cursor: pointer;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    
+}
+
+.overlay h3 {
+    color: black;
+    margin-top: 11rem;
+    
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    border: 1px solid rgba(166, 166, 166, 0.47);
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(166, 166, 166, 0.5);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/*======================*/
+/* JOURNAL COMPONENTS */
+/*======================*/
+
+.journal-section {
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.journal-section h4 {
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+.journal-heading h5 {
+    color: #666666;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+.journal-heading h6 {
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 1.2rem;
+}
+
+.journal-description {
+    text-align: start;
+    padding: 1.5rem;
+}
+
+.journal-description p {
+        color: #666666;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.journal-description a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #666666;
+    font-size: 1rem;
+}
+
+.button-border::after {
+    content: '';
+    display: block;
+    width: 0;
+    border: 1px solid #28b8d8;
+    margin-top: .3rem;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+/*    display: none;*/
+}
+
+.button-border:hover.button-border::after{
+    opacity: 1;
+    width: 9.5rem;
+/*    display: block;*/
+}
+
+.journal img {
+    width: 100%;
+}
+
+.journal {
+    border: 1px solid rgba(102, 102, 102, 0.49);
+    background-color: white;
+}
+
+
+.about {
+    margin-top: 10rem;
+}
+
+.about h4 {
+    text-align: left;
+}
+
+.about-image {
+/*    width: 50%;*/
+    float: left;
+    margin-right: 2rem;
+}
+.about-text {
+    padding-right: 3rem;
+}
+.about-text-first-part{
+    text-align: left;
+    font-size: 1.4rem;
+    color: #666666;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.about-text-second-part {
+    text-align: left;
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 2rem;
+}
